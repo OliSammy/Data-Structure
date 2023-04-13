@@ -1,6 +1,7 @@
 #include "esfera.h"
 #include <math.h>
 #include <stdlib.h>
+float pi = 3.14;
 
 Esfera criar_esfera(float raio) {
     Esfera esfera = (Esfera) malloc(sizeof(esfera));
@@ -13,9 +14,9 @@ void destruir_esfera(Esfera esfera) {
 }
 
 float calcular_volume(Esfera esfera) {
-    return (4.0/3.0) * M_PI * pow(esfera->raio, 3);
+    return (4.0/3.0) * pi * pow(esfera->raio, 3);
 }
 
 float calcular_area(Esfera esfera) {
-    return 4 * M_PI * pow(esfera->raio, 2);
+    return 4 * pi * pow(esfera->raio, 2);
 }
