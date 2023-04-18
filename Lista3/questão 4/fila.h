@@ -1,6 +1,6 @@
 #ifndef FILA_H_INCLUDED
 #define FILA_H_INCLUDED
-
+#include <stdbool.h>
 #define MAX 100
 
 typedef struct fila {
